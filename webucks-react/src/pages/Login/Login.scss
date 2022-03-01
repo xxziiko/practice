@@ -1,55 +1,63 @@
+$font-size-smail: 7px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin margin-padding {
+  margin: 5px;
+  padding: 10px;
+}
+
+@mixin border-sizing($color) {
+  border-radius: 5px;
+  border: 1px solid $color;
+}
+
 .container {
+  @include border-sizing(#e4e4e4);
   width: 400px;
   height: 450px;
   margin: 50px auto;
   padding: 60px 30px;
-  border: 2px solid #e4e4e4;
-  border-radius: 5px;
 }
 
 .title {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   margin-top: 30px;
   margin-left: 0;
 }
 
 .loginArea {
-  display: flex;
-  position: relative;
-  justify-content: center;
+  @include flex-center;
   flex-direction: column;
   margin: 10px 30px;
 }
 
 .inputId,
 .inputPassword {
+  @include margin-padding;
+  @include border-sizing(lightgray);
   display: flex;
-  margin: 5px;
-  padding: 7px;
   background-color: #f7f7f7;
-  border: 1px solid lightgray;
-  border-radius: 3px;
-  font-size: 7px;
+  font-size: $font-size-smail;
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-  padding: 10px;
-  color: white;
+  @include flex-center;
+  @include margin-padding;
+  @include border-sizing(white);
   background-color: #add3ea;
-  border-radius: 5px;
-  border: 1px solid white;
+  color: white;
+  cursor: pointer;
 }
 
 .find-password {
-  display: flex;
-  justify-content: center;
-  padding-top: 90px;
+  @include flex-center;
+  margin-top: 100px;
   color: #3e98f2;
   font-family: "Courier New", Courier, monospace;
-  font-size: 7px;
+  font-size: $font-size-smail;
   text-decoration: none;
 }

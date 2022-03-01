@@ -1,8 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.scss";
 
 function LoginComponent() {
+  const navigate = useNavigate();
+
+  const goToList = () => {
+    navigate("/List");
+  };
   return (
     <div>
       <div className="container">
@@ -20,7 +25,7 @@ function LoginComponent() {
             type="password"
             placeholder="비밀번호"
           />
-          <button className="btn" onClick={() => {}} disabled>
+          <button className="btn" onClick={goToList}>
             로그인
           </button>
           <Link to="/signup" className="find-password" href="">
