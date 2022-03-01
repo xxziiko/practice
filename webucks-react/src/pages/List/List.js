@@ -1,20 +1,11 @@
 import React from "react";
 import "./List.scss";
+import TopsNav from "./TopsNav";
 
 function ListComponent() {
   return (
     <div>
-      <div className="navbar">
-        <div>
-          <img src="/images/WeBucks.png" alt="" width="70" />
-        </div>
-        <ul class="navbar__menu">
-          <li>COFFEE</li>
-          <li>MENU</li>
-          <li>STORE</li>
-          <li>WHAT'NEW</li>
-        </ul>
-      </div>
+      <TopsNav />
 
       <section>
         <ul class="menubar">
@@ -52,6 +43,7 @@ function ListComponent() {
             <li>콜드 브루</li>
           </ul>
         </div>
+
         <div className="list">
           <ul>
             <div className="imgs">

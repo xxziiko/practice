@@ -1,7 +1,4 @@
-$navbar-backgroundColor: #f6f5ee;
 $menubar-backgroundColor: #f4f4f2;
-$navbar-color: lightgray;
-$menufont: "Gowun Dodum", sans-serif;
 $font: "Courier New", Courier, monospace;
 $menu-fontsize: 8px;
 $prod-fontsize: 10px;
@@ -36,33 +33,6 @@ $prod-fontsize: 10px;
 @mixin imgs-size {
   width: 250px;
   height: 250px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 40px;
-  margin-bottom: 20px;
-  background-color: $navbar-backgroundColor;
-
-  div {
-    padding-top: 5px;
-  }
-}
-
-.navbar__menu {
-  @include menu;
-  padding-right: 5px;
-  font-family: $menufont;
-  text-decoration: none;
-  color: $navbar-color;
-
-  li {
-    padding: 5px;
-    cursor: pointer;
-    font-size: $menu-fontsize;
-  }
 }
 
 section {
