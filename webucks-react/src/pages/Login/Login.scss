@@ -20,18 +20,19 @@ $font-size-smail: 7px;
   width: 500px;
   height: 500px;
   margin: 50px auto;
-  // padding: 30px;
 }
 
 .loginArea {
   @include flex-center;
   flex-direction: column;
-  padding-left: 85px;
+  padding-left: 90px;
   margin: 0;
 
-  img {
-    width: 300px;
-    height: 200px;
+  .title {
+    img {
+      width: 300px;
+      height: 200px;
+    }
   }
 
   input {
@@ -41,15 +42,15 @@ $font-size-smail: 7px;
     background-color: #f7f7f7;
     font-size: $font-size-smail;
   }
-}
 
-.btn {
-  @include flex-center;
-  @include margin-padding;
-  @include border-sizing(white);
-  background-color: #add3ea;
-  color: white;
-  cursor: pointer;
+  button {
+    @include flex-center;
+    @include margin-padding;
+    @include border-sizing(white);
+    background-color: #add3ea;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 .find-password {
