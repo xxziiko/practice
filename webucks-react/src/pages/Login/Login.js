@@ -11,20 +11,12 @@ function LoginComponent() {
   return (
     <div>
       <div className="container">
-        <div className="title">
-          <img src="/images/WeBucks.png" alt="" width="300" />
-        </div>
-        <div className="loginArea" action="./list.html">
-          <input
-            className="inputId"
-            type="text"
-            placeholder="전화번호, 사용자 이름 또는 이메일"
-          />
-          <input
-            className="inputPassword"
-            type="password"
-            placeholder="비밀번호"
-          />
+        <div className="loginArea">
+          <div>
+            <img src="/images/WeBucks.png" alt="" />
+          </div>
+          <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+          <input type="password" placeholder="비밀번호" />
           <button className="btn" onClick={goToList}>
             로그인
           </button>

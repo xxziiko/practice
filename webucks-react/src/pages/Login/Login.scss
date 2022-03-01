@@ -23,25 +23,23 @@ $font-size-smail: 7px;
   padding: 60px 30px;
 }
 
-.title {
-  @include flex-center;
-  margin-top: 30px;
-  margin-left: 0;
-}
-
 .loginArea {
   @include flex-center;
   flex-direction: column;
-  margin: 10px 30px;
-}
+  padding-left: 40px;
+  margin: 0;
 
-.inputId,
-.inputPassword {
-  @include margin-padding;
-  @include border-sizing(lightgray);
-  display: flex;
-  background-color: #f7f7f7;
-  font-size: $font-size-smail;
+  img {
+    width: 300px;
+    height: 250px;
+  }
+  input {
+    @include margin-padding;
+    @include border-sizing(lightgray);
+    display: flex;
+    background-color: #f7f7f7;
+    font-size: $font-size-smail;
+  }
 }
 
 .btn {
@@ -55,7 +53,7 @@ $font-size-smail: 7px;
 
 .find-password {
   @include flex-center;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #3e98f2;
   font-family: "Courier New", Courier, monospace;
   font-size: $font-size-smail;
