@@ -1,5 +1,6 @@
 import React from "react";
-import "./Login.css";
+import { Link } from "react-router-dom";
+import "./Login.scss";
 
 function LoginComponent() {
   return (
@@ -22,9 +23,9 @@ function LoginComponent() {
           <button className="btn" onClick={() => {}} disabled>
             로그인
           </button>
-          <div className="find-password" onClick={() => {}} href="">
+          <Link to="/signup" className="find-password" href="">
             비밀번호를 잊으셨나요?
-          </div>
+          </Link>
         </div>
       </div>
     </div>
